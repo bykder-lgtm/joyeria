@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es" data-modo="oscuro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guía de aprendizaje · Sistema de Joyería</title>
+<link rel="stylesheet" href="guia.css">
+</head>
+<body>
+<header class="g-barra">
+  <button class="g-menu-btn" id="g_menu_btn" type="button" title="Menú">☰</button>
+  <div class="g-marca">
+    <span class="g-logo">J</span>
+    <div><b>Guía de aprendizaje</b><small>Sistema de Joyería</small></div>
+  </div>
+  <div class="g-barra-medio">
+    <input type="search" id="g_buscar" class="g-input" placeholder="Buscar un módulo o una tarea...">
+  </div>
+  <div class="g-barra-der">
+    <div class="g-progreso" title="Módulos aprendidos">
+      <div class="g-progreso-barra"><span id="g_progreso"></span></div>
+      <small id="g_progreso_txt">0%</small>
+    </div>
+    <button class="g-btn-suave" id="g_modo" type="button">Claro / Oscuro</button>
+    <button class="g-btn-suave" id="g_imprimir" type="button">Imprimir</button>
+  </div>
+</header>
+
+<div class="g-cuerpo">
+  <aside class="g-panel" id="g_panel">
+    <nav id="g_nav"></nav>
+  </aside>
+
+  <main class="g-main" id="g_main">
+    <section class="g-vista" id="g_vista_inicio"></section>
+    <section class="g-vista" id="g_vista_modulo" hidden></section>
+    <section class="g-vista" id="g_vista_simuladores" hidden></section>
+    <section class="g-vista" id="g_vista_glosario" hidden></section>
+    <section class="g-vista" id="g_vista_checklist" hidden></section>
+  </main>
+</div>
+
+<footer class="g-pie">
+  <span>Guía interactiva del sistema de joyería · Se puede enviar y abrir sin instalación.</span>
+  <span id="g_footer_acciones"></span>
+</footer>
+
+<script src="contenido.js"></script>
+<script src="guia.js"></script>
+</body>
+</html>
